@@ -9,9 +9,11 @@
 
 使用方法就是先不把Mtool的JSON放进去，在SExtractor用正则表达式
 
+'''
 22_search=^([\s\S]+)$
 extraData=^Original Text$
 writeOffset=1
+'''
 
 跑一遍，得到没有译文的transDic.output.json。之后把Mtool的JSON重命名为TrsData.json，把这两个json和代码放在一起，跑一遍代码，输出transDic.json。最后把transDic.json放到ctrl文件夹里面，再跑一遍SExtractor，就行了。这个方法应该能够翻译绝大部分的文本。
 
